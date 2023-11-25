@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <form id="workerForm">
+    <input type="hidden" id="id">
+    <div>
+      <label for="name">Pozicíó</label>
+      <input type="text" id="Job" required>
+    </div>
+    <div>
+      <label for="name">Név</label>
+      <input type="text" id="Name" required>
+    </div>
+    <div>
+      <label for="credit">Kredit</label>
+      <input type="number" id="Credit" required>
+    </div>
+    <div>
+      <label for="ceg">Cég név</label>
+      <input type="text" id="CompanyName" required>
+    </div>
+
+    <button type="submit" id="submitButton" class="btn btn-primary">Felvétel</button>
+    <button type="submit" id="updateButton" class="d-none btn btn-success" >Módosít</button>
+    <button type="cancel" id="cancelButton" class="btn btn-secondary">Mégse</button>
+  </form>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Pozicíó</th>
+        <th>Név</th>
+        <th>Kredit pont</th>
+        <th>Cég név</th>
+        <th>Műveletek</th>
+      </tr>
+    </thead>
+    <tbody id="workerTable">
+
+    </tbody>
+  </table>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
